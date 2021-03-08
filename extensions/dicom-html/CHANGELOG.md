@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.3](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-html@1.3.2...@ohif/extension-dicom-html@1.3.3) (2021-03-03)
+
+**Note:** Version bump only for package @ohif/extension-dicom-html
+
+
+
+
+
+## [1.3.2](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-html@1.3.1...@ohif/extension-dicom-html@1.3.2) (2021-02-25)
+
+**Note:** Version bump only for package @ohif/extension-dicom-html
+
+
+
+
+
+## [1.3.1](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-html@1.3.0...@ohif/extension-dicom-html@1.3.1) (2021-02-05)
+
+**Note:** Version bump only for package @ohif/extension-dicom-html
+
+
+
+
+
+# [1.3.0](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-html@1.2.9...@ohif/extension-dicom-html@1.3.0) (2020-12-10)
+
+
+### Features
+
+* visualize overlapping segments in cornerstone ([#2185](https://github.com/OHIF/Viewers/issues/2185)) ([29fceac](https://github.com/OHIF/Viewers/commit/29fceacee97d51f1952a0f6b574c66596d32c201))
+
+
+
+
+
 ## [1.2.9](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-html@1.2.8...@ohif/extension-dicom-html@1.2.9) (2020-10-07)
 
 **Note:** Version bump only for package @ohif/extension-dicom-html
