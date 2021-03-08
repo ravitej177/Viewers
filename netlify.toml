@@ -10,7 +10,7 @@
 
 [build]
   base = ""
-  publish = ".netlify/www/"
+  publish = ".netlify/www"
   command = "chmod +x .netlify/build-deploy-preview.sh && .netlify/build-deploy-preview.sh"
   ignore = "false"
 
