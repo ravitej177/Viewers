@@ -1,0 +1,118 @@
+{
+  "studies": [
+    {
+      "StudyInstanceUID": "1.2.840.113619.2.5.1762583153.215519.978957063.78",
+      "StudyDescription": "BRAIN SELLA",
+      "StudyDate": "20010108",
+      "StudyTime": "120022",
+      "PatientName": "MISTER^MR",
+      "PatientId": "832040",
+      "series": [
+        {
+          "SeriesDescription": "SAG T-1",
+          "SeriesInstanceUID": "1.2.840.113619.2.5.1762583153.215519.978957063.121",
+          "SeriesNumber": 2,
+          "SeriesDate": "20010108",
+          "SeriesTime": "120318",
+          "Modality": "MR",
+          "instances": [
+            {
+              "metadata": {
+                "Columns": 600,
+                "Rows": 800,
+                "InstanceNumber": 3,
+                "AcquisitionNumber": 0,
+                "PhotometricInterpretation": "MONOCHROME2",
+                "BitsAllocated": 8,
+                "BitsStored": 8,
+                "PixelRepresentation": 0,
+                "SamplesPerPixel": 0,
+                "PixelSpacing": [
+                  0.390625,
+                  0.390625
+                ],
+                "HighBit": 7,
+                "ImageOrientationPatient": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "ImagePositionPatient": [
+                  11.600000,
+                  -92.500000,
+                  98.099998
+                ],
+                "FrameOfReferenceUID": "1.2.840.113619.2.5.1762583153.223134.978956938.470",
+                "ImageType": [
+                  "DERIVED",
+                  "PRIMARY",
+                  "CARDIOLOGY"
+                ],
+                "Modality": "MR",
+                "SOPInstanceUID": "1.2.410.200013.1.310.1.202103040944299060002",
+                "SeriesInstanceUID": "1.2.840.113619.2.5.1762583153.215519.978957063.121",
+                "StudyInstanceUID": "1.2.840.113619.2.5.1762583153.215519.978957063.78"
+              },
+              "url": "dicomweb://localhost:3000/multiframe-test1.dcm"
+            }
+          ]
+        },
+        {
+          "SeriesDescription": "SAG T-1",
+          "SeriesInstanceUID": "1.2.840.113619.2.5.1762583153.215519.978957063.123",
+          "SeriesNumber": 2,
+          "SeriesDate": "20010108",
+          "SeriesTime": "120318",
+          "Modality": "US",
+          "instances": [
+            {
+              "metadata": {
+                "Columns": 512,
+                "Rows": 512,
+                "InstanceNumber": 3,
+                "AcquisitionNumber": 0,
+                "PhotometricInterpretation": "MONOCHROME2",
+                "BitsAllocated": 16,
+                "BitsStored": 16,
+                "PixelRepresentation": 1,
+                "SamplesPerPixel": 1,
+                "PixelSpacing": [
+                  0.390625,
+                  0.390625
+                ],
+                "HighBit": 15,
+                "ImageOrientationPatient": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "ImagePositionPatient": [
+                  11.600000,
+                  -92.500000,
+                  98.099998
+                ],
+                "FrameOfReferenceUID": "1.2.840.113619.2.5.1762583153.223134.978956938.471",
+                "ImageType": [
+                  "ORIGINAL",
+                  "PRIMARY",
+                  "OTHER"
+                ],
+                "Modality": "MR",
+                "SOPInstanceUID": "1.2.840.113619.2.5.1762583153.215519.978957063.124",
+                "SeriesInstanceUID": "1.2.840.113619.2.5.1762583153.215519.978957063.123",
+                "StudyInstanceUID": "1.2.840.113619.2.5.1762583153.215519.978957063.78"
+              },
+              "url": "dicomweb://localhost:3000/new_fixed.dcm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

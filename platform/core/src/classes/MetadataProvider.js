@@ -131,7 +131,6 @@ class MetadataProvider {
 
   get(query, imageId, options = { fallback: false }) {
     const instance = this._getInstance(imageId);
-
     if (query === INSTANCE) {
       return instance;
     }

@@ -83,7 +83,7 @@ class ViewerLocalFileData extends Component {
       });
 
       studyMetadataManager.add(studyMetadata);
-
+      console.log(studyMetadata);
       return study;
     });
 
