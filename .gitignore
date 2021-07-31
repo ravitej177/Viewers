@@ -17,6 +17,7 @@ yalc.lock
 # Logging, System files, misc.
 .idea/
 .npm
+.netlify
 npm-debug.log
 package-lock.json
 yarn-error.log

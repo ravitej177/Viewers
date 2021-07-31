@@ -69,7 +69,7 @@ class MetadataProvider {
     // This method is a fallback for when you don't have WADO-URI or WADO-RS.
     // You can add instances fetched by any method by calling addInstance, and hook an imageId to point at it here.
     // An example would be dicom hosted at some random site.
-
+    console.log(imageId);
     this.imageIdToUIDs.set(imageId, uids);
   }
 
