@@ -15,9 +15,7 @@ export default function NotFound({
         <h4>{message}</h4>
         {showGoBackButton && context.appConfig.showStudyList && (
           <h5>
-            <a href="https://dicom.store/custom_studies">
-              Go back to the Study List
-            </a>
+            <a href="https://web.amplifypacs.com">Go back to the Study List</a>
           </h5>
         )}
       </div>
