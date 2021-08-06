@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "netlify-cli": "^2.21.0"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
   }
 }

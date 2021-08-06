@@ -63,7 +63,6 @@ class StandaloneRouting extends Component {
         log.info(JSON.stringify(oReq.responseText, null, 2));
 
         const data = JSON.parse(oReq.responseText);
-        console.log(data);
         if (data.servers) {
           if (!query.studyInstanceUIDs) {
             log.warn('No study instance uids specified');
@@ -88,7 +87,6 @@ class StandaloneRouting extends Component {
 
           let StudyInstanceUID;
           let SeriesInstanceUID;
-          console.log(data);
 
           data.studies.forEach(study => {
             StudyInstanceUID = study.StudyInstanceUID;
