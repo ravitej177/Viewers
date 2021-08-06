@@ -9,13 +9,24 @@ export default function NotFound({
 }) {
   const context = useAppContext();
 
+  const redirectUrl = () => {
+    const host = window.parent.location.hostname;
+    if (host == 'dicom.store') {
+      return 'https://dicom.store/custom_studies';
+    } else if (host == 'web.amplifypacs.com') {
+      return 'https://web.amplifypacs.com';
+    } else {
+      return window.parent.location;
+    }
+  };
+
   return (
     <div className={'not-found'}>
       <div>
         <h4>{message}</h4>
         {showGoBackButton && context.appConfig.showStudyList && (
           <h5>
-            <a href="https://web.amplifypacs.com">Go back to the Study List</a>
+            <a href={redirectUrl()}>Go back to the Study List</a>
           </h5>
         )}
       </div>
