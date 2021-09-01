@@ -51,6 +51,10 @@ const ROUTES_DEF = {
       path: '/viewer',
       component: StandaloneRouting,
     },
+    local: {
+      path: '/local',
+      component: ViewerLocalFileData,
+    },
     IHEInvokeImageDisplay: {
       path: '/IHEInvokeImageDisplay',
       component: IHEInvokeImageDisplay,
