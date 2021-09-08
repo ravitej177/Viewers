@@ -9,7 +9,11 @@
   width: 100%;
   display: flex;
   align-items: center;
-  overflow-x: scroll;
+}
+
+.ToolbarRow:hover {
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 ToolbarRow.expanded {
