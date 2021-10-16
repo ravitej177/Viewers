@@ -13,7 +13,11 @@ const { setViewportSpecificData } = OHIF.redux.actions;
 const refreshCornerstoneViewports = () => {
   cornerstone.getEnabledElements().forEach(enabledElement => {
     if (enabledElement.image) {
+      enabledElement.viewport.displayedArea.brhc.x = enabledElement.image.width;
+      enabledElement.viewport.displayedArea.brhc.y =
+        enabledElement.image.height;
       cornerstone.updateImage(enabledElement.element);
+      cornerstone.fitToWindow(enabledElement);
     }
   });
 };
