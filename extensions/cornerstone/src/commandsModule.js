@@ -274,22 +274,26 @@ const commandsModule = ({ servicesManager }) => {
       activeViewportIndex,
     }) => {
       const study = studyMetadataManager.get(StudyInstanceUID);
-
       const displaySet = study.findDisplaySet(ds => {
         return (
           ds.images &&
           ds.images.find(i => i.getSOPInstanceUID() === SOPInstanceUID)
         );
       });
-
-      displaySet.SOPInstanceUID = SOPInstanceUID;
-      displaySet.frameIndex = frameIndex;
-
-      window.store.dispatch(
-        setViewportSpecificData(activeViewportIndex, displaySet)
-      );
-
-      refreshCornerstoneViewports();
+      try {
+        displaySet.SOPInstanceUID = SOPInstanceUID;
+        displaySet.frameIndex = frameIndex;
+        window.store.dispatch(
+          setViewportSpecificData(activeViewportIndex, displaySet)
+        );
+        refreshCornerstoneViewports();
+      } catch {
+        console.log(activeViewportIndex);
+        const enabledElement = getEnabledElement(activeViewportIndex);
+        if (enabledElement) {
+          cornerstone.reset(enabledElement);
+        }
+      }
     },
   };
 
